@@ -23,14 +23,13 @@ func (e *url) GetUrl(tinyUrl string) string {
 	return longUrl
 }
 
-func (e *url)  AddTinyUrl(url *models.Url) bool {
+func (e *url) AddTinyUrl(url *models.Url) bool {
 
 	log.Println("Inside url service", url)
 	//GetServiceFactory().GetHealthService().PrintHealth()
-//	_ := e.dao.GetEmployeeDao().GetEmployee()
+	//	_ := e.dao.GetEmployeeDao().GetEmployee()
 	return true
 }
-
 
 func getUrlService(dao repositories.DaoFactory) UrlService {
 	return &url{

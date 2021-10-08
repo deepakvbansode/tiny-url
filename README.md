@@ -25,7 +25,16 @@ System have following components.
     
     Mongo DB have been used for persistence storage. 
 
+## Setup and Run
 
+### Run the project
+    1. run docker-compose -f docker-compose.yml up -d
+    2. cd cmd/server && go run main.go 
+    or
+    2.1 run in docker container
+        1. make docker
+        2. docker run -it -p 8081:8081 tiny-url 
+    
 ## Todo
 1. setup simple project -> done
  -> 2 handler, serivce, dao -> done

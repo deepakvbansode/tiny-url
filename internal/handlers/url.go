@@ -22,7 +22,6 @@ func GetLongHandler(config *config.Config) http.HandlerFunc {
 	}
 }
 
-
 func AddTinyUrlHandler(config *config.Config) http.HandlerFunc {
 	return func(writer http.ResponseWriter, request *http.Request) {
 		url := models.Url{}
@@ -39,7 +38,7 @@ func AddTinyUrlHandler(config *config.Config) http.HandlerFunc {
 			return
 		}
 
-		res, err :=  url, nil
+		res, err := url, nil
 		if err != nil {
 			utils.WriteResponse(writer, http.StatusBadRequest, err.Error())
 			return
@@ -47,4 +46,3 @@ func AddTinyUrlHandler(config *config.Config) http.HandlerFunc {
 		utils.WriteResponse(writer, http.StatusOK, res)
 	}
 }
-

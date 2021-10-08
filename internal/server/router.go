@@ -27,7 +27,6 @@ func (r *Router) InitializeRouter(routerConfig *config.Config) {
 func (r *Router) initializeRoutes(routerConfig *config.Config) {
 	s := (*r).PathPrefix(routerConfig.WebServerConfig.RoutePrefix).Subrouter()
 
-
 	s.HandleFunc(literals.HealthcheckURI,
 		handlers.HealthCheckHandler(routerConfig)).
 		Methods(http.MethodGet).

@@ -22,7 +22,6 @@ func (e *urlDao) GetLongUrl(tinyUrl string) string {
 	return "http://www.xyz.com/very-long-url"
 }
 
-
 func (e *urlDao) InsertTinyUrl(url models.Url) bool {
 	fmt.Println("Getting data from mongo:", e.mongo)
 	return true

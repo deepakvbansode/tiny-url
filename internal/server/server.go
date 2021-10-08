@@ -45,7 +45,6 @@ func RunServer() error {
 	var daoFactory repositories.DaoFactory
 	daoFactory = dao.InitDao("pass the cred here")
 
-
 	services.InitServiceFactory(daoFactory)
 
 	server.Router.InitializeRouter(&config)
@@ -55,7 +54,6 @@ func RunServer() error {
 	if err != nil {
 		return err
 	}
-
 
 	return nil
 }

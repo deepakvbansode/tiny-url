@@ -3,7 +3,6 @@ package errors
 import (
 	"golang.frontdoorhome.com/personal-project/tiny-url/internal/literals"
 	"net/http"
-
 )
 
 const (

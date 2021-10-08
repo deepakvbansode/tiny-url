@@ -4,8 +4,8 @@ const (
 	HealthcheckURI     = "/health-check"
 	HealthcheckAPIName = "HealthCheck"
 
-	TinyUrl     = "/tiny"
-	GetLongUrlAPIName = "GetEmployee"
+	TinyUrl              = "/tiny"
+	GetLongUrlAPIName    = "GetEmployee"
 	CreateTinyUrlAPIName = "PostEmployee"
 )
 
@@ -19,7 +19,6 @@ const (
 )
 
 /* End of Service constants */
-
 
 /* Start of Database constants */
 const (

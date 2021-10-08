@@ -6,11 +6,11 @@ import (
 	"github.com/kelseyhightower/envconfig"
 )
 
-const envPrefix = "WISHER"
+const envPrefix = "TINY"
 
 type WebServerConfig struct {
-	Port           string `required:"true" split_words:"true" default:"50051"`
-	RoutePrefix    string `required:"false" split_words:"true" default:"/"`
+	Port        string `required:"true" split_words:"true" default:"8081"`
+	RoutePrefix string `required:"false" split_words:"true" default:"/"`
 }
 
 type Config struct {
